@@ -1,9 +1,9 @@
 ---
 applications:
-- name: orders-service
+- name: orders-service-dev
   memory: 768M
   instances: 1
-  random-route: true
+#  random-route: true
   path: target/orders-service-0.0.1-SNAPSHOT.jar
   services:
-    - config-server  
+    - ds-config-server  
